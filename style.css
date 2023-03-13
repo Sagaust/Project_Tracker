@@ -1,71 +1,99 @@
+/* set default font family and size */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
-  line-height: 1;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
+/* style for jumbotron header */
 .jumbotron {
+  background-color: #F8F9FA;
+  padding: 3rem;
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
-.description {
-  white-space: pre-wrap;
+/* style for header text */
+.display-3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.time-block {
-  text-align: center;
-  border-radius: 15px;
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+/* style for current day */
+#currentDay {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
 }
 
+/* style for time blocks */
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  padding-top: 1rem;
+  text-align: right;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
+/* style for hours */
+.hour span {
+  font-weight: bold;
+  color: #999;
 }
 
-.present {
-  background-color: #ff6961;
-  color: white;
+/* style for event textarea */
+.event-group {
+  padding-top: 1rem;
 }
 
-.future {
-  background-color: #77dd77;
-  color: white;
+.events {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: none;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+/* style for save and delete icons */
+.save-delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+/* style for delete icon */
+i.fas.fa-trash {
+  color: #FF5A5F;
+  cursor: pointer;
+}
+
+/* style for save icon */
+i.fas.fa-save {
+  color: #5CB85C;
+  cursor: pointer;
+}
+
+/* style for past, present, and future time blocks */
+.past .events {
+  background-color: #E9EBEE;
+}
+
+.present .events {
+  background-color: #FDD7C6;
+}
+
+.future .events {
+  background-color: #FFF9A5;
+}
+
+/* style for save and delete icons */
+i.fas {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+i.fas:hover {
+  color: #FED136;
 }
